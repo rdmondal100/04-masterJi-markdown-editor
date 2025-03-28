@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="title">
+        MasterJi Markdown Editor
+    </div>
+    <div class="clearbtn"><button id="resetBtn">Reset</button></div>
+    <main class="main">
+        <div id="editor-container">
+            <div class="box-title">Editor</div>
+            <textarea id="markdown-input" placeholder="Type your Markdown here..."></textarea>
+        </div>
+        <div id="preview-container">
+            <div class="box-title">Preview</div>
+
+            <div id="preview"></div>
+        </div>
+    </main>
+    
+    <script src="./src/app.js"></script>
+</body>
+</html>
