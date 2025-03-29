@@ -45,8 +45,8 @@ body {
     height: 100%;
     gap: 10px;
     padding: 20px;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-start;
 }
 .box-title{
     font-size: 20px;
@@ -57,8 +57,7 @@ body {
 #editor-container, #preview-container {
     width: 50%;
     box-sizing: border-box;
-    height: auto;
-    min-height: 75vh;
+    height: 75vh;
 }
 textarea {
     width: 100%;
@@ -68,6 +67,7 @@ textarea {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 8px;
+    overflow-y: auto;
 
 }
 textarea:focus{
@@ -80,7 +80,7 @@ textarea:focus{
 
     overflow-y: auto;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 20px 30px;
     background: #f9f9f9;
     white-space: pre-wrap;
     border-radius: 8px;
@@ -97,11 +97,19 @@ pre {
     border-radius: 4px;
 }
 
+ul{
+    list-style:inside;
+}
+
 
 
 @media (max-width: 780px){
     .main{
         flex-direction: column;
-    
+        gap: 80px;
+        margin-bottom: 50px;
+    }
+    #editor-container, #preview-container {
+        width: 100%;
     }
 }
